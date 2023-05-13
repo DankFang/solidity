@@ -13,8 +13,8 @@ contract Undigraph {
     uint256[] pathID;
     uint256[] shortPath;
     uint256[] pathResult;
-
     uint256 route;
+    
     struct Node {
         uint256 nodeId;
         string name;
@@ -57,6 +57,7 @@ contract Undigraph {
 
         // 先把之前遍历过的全部重置
         setFaulse();
+        delete BFSResult;
         queue.push(start);
         visited[start] = true;
         while (queue.length != 0) {
@@ -76,6 +77,8 @@ contract Undigraph {
         // TODO
         // 先把之前遍历过的全部重置
         setFaulse();
+        
+        delete DFSresult;
         stack.push(start);
         visited[start] = true;
         while (stack.length != 0) {
@@ -91,6 +94,10 @@ contract Undigraph {
     function ShortestPath(uint256 start) external returns (uint256[] memory) {
         // TODO
         setFaulse();
+        route = 0;
+        delete pathID;
+        delete path;
+        delete pathResult;
         queue.push(start);
         pathID.push(start);
         visited[start] = true;

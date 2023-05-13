@@ -1,0 +1,139 @@
+{
+	"compiler": {
+		"version": "0.8.18+commit.87f61d96"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "start",
+						"type": "uint256"
+					}
+				],
+				"name": "BFS",
+				"outputs": [
+					{
+						"internalType": "uint256[]",
+						"name": "",
+						"type": "uint256[]"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "start",
+						"type": "uint256"
+					}
+				],
+				"name": "DFS",
+				"outputs": [
+					{
+						"internalType": "uint256[]",
+						"name": "",
+						"type": "uint256[]"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "start",
+						"type": "uint256"
+					}
+				],
+				"name": "ShortestPath",
+				"outputs": [
+					{
+						"internalType": "uint256[]",
+						"name": "",
+						"type": "uint256[]"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "vertext1",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "vertext2",
+						"type": "uint256"
+					}
+				],
+				"name": "addEdge",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "nodeId",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "nodeName",
+						"type": "string"
+					}
+				],
+				"name": "addVertext",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Desktop/solidity/Graph.sol": "Undigraph"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Desktop/solidity/Graph.sol": {
+			"keccak256": "0x03b4237500134f711b5dbfbe65f0ca7c73fcb69117febeba98c7896dd2fea57b",
+			"license": "UNLICENSED",
+			"urls": [
+				"bzz-raw://a904827132cd10140b4742fe99cf9bc330c2ad23083deed09389f65b10383272",
+				"dweb:/ipfs/Qmbg4AxuaDavf1P2P3dKbioMhEALhfXbJirWQMENN1sqxd"
+			]
+		}
+	},
+	"version": 1
+}
