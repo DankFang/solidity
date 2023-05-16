@@ -10,10 +10,6 @@ contract Dijkstra {
     mapping(uint => mapping(uint => uint)) private dist;
     uint[] path;
     uint[] PathResult;
-    struct Edge {
-        uint to;
-        uint weight;
-    }
     constructor(uint256 NodeCount) {
         nodeCount = NodeCount;
     }
